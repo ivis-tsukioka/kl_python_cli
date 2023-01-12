@@ -2,7 +2,6 @@ import argparse
 
 def hello():
     print('hello qiita')
-    return "jfidfidfjidf"
 
 def add(a, b):
     print(a + b)
@@ -14,7 +13,8 @@ def printJSONString(json):
     try:
         print(json["key1"])
         print(json["key2"])
-    except AttributeError:
+        raise Exception
+    except Exception:
         print("Error printJSONString(json) ")
 
 def multiFunc(a, b, c):
