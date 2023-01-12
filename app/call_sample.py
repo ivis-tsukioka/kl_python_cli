@@ -13,7 +13,6 @@ def printJSONString(json):
     try:
         print(json["key1"])
         print(json["key2"])
-        raise Exception
     except Exception:
         print("Error printJSONString(json) ")
 
