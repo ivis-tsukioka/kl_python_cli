@@ -26,6 +26,7 @@ def multiFunc(a, b, c):
 
 def editFile(path):
     pathc = pathlib.Path(path)
+    print(pathc)
     isFile = os.path.isfile(pathc)
     if isFile == False:
         print("Not exit file")
