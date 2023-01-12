@@ -6,7 +6,6 @@ def hello():
 
 def add(a, b):
     print(a + b)
-    return a
 
 def printString(a):
     print(a)
