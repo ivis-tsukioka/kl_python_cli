@@ -14,7 +14,7 @@ def printJSONString(json):
     try:
         print(json["key1"])
         print(json["key2"])
-    except Exception:
+    except AttributeError:
         print("Error printJSONString(json) ")
 
 def multiFunc(a, b, c):
