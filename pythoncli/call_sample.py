@@ -25,6 +25,7 @@ def multiFunc(a, b, c):
 
 
 def editFile(path):
+    print(path)
     pathc = pathlib.Path(path)
     print(pathc)
     isFile = os.path.isfile(pathc)
