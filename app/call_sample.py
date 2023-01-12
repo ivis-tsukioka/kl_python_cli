@@ -11,9 +11,11 @@ def printString(a):
     print(a)
 
 def printJSONString(json):
-
-    print(json["key1"])
-    print(json["key2"])
+    try:
+        print(json["key1"])
+        print(json["key2"])
+    except Exception:
+        print("Error printJSONString(json) ")
 
 def multiFunc(a, b, c):
     hello()
