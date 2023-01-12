@@ -2,9 +2,11 @@ import argparse
 
 def hello():
     print('hello qiita')
+    return "jfidfidfjidf"
 
 def add(a, b):
     print(a + b)
+    return a
 
 def printString(a):
     print(a)
