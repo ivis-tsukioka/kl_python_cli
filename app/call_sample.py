@@ -10,6 +10,11 @@ def add(a, b):
 def printString(a):
     print(a)
 
+def printJSONString(json):
+
+    print(json["key1"])
+    print(json["key2"])
+
 def multiFunc(a, b, c):
     hello()
     add(a, b)
