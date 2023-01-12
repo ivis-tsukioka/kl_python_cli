@@ -1,4 +1,6 @@
 import argparse
+import os
+import pathlib
 
 def hello():
     print('hello qiita')
@@ -20,6 +22,30 @@ def multiFunc(a, b, c):
     hello()
     add(a, b)
     printString(c)
+
+
+def editFile(path):
+    pathc = pathlib.Path(path)
+    isFile = os.path.isfile(pathc)
+    if isFile == False:
+        print("Not exit file")
+        return
+
+    with open(pathc) as f:
+        s = f.read()
+        print("Read File1")
+        print(s)
+
+    with open(pathc, mode='a') as f:
+        addstr = "2nd write"
+        f.write(addstr)
+
+    with open(pathc) as f:
+        s = f.read()
+        print("Read File2")
+        print(s)
+
+    print("Complete Editting File")
 
 
 if __name__ == "__main__":
